@@ -33,7 +33,7 @@ Partial Class FormHome
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(270, 167)
+        Me.PictureBox1.Location = New System.Drawing.Point(270, 192)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(198, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -43,7 +43,7 @@ Partial Class FormHome
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(474, 167)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(474, 192)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(181, 133)
         Me.BunifuCustomLabel1.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class FormHome
         '
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(264, 313)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(264, 358)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(391, 33)
         Me.BunifuCustomLabel2.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class FormHome
         Me.BunifuCustomLabel3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(825, 25)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(844, 25)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(80, 18)
         Me.BunifuCustomLabel3.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class FormHome
         Me.Controls.Add(Me.BunifuCustomLabel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "FormHome"
-        Me.Size = New System.Drawing.Size(957, 584)
+        Me.Size = New System.Drawing.Size(957, 616)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
