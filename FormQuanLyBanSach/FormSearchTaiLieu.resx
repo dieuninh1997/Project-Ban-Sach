@@ -121,17 +121,8 @@
   <data name="BunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYSURBVChTY3jxb/N/YvCoQryY2go3/wcA23dncLSy9YMA
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYSURBVChTY3D4//8/MXhUIV5MbYX//wMA8ZJD5KtPefsA
         AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnThuNho.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAKlJREFUSEvt
-        kssKwkAQBMef87viA6JGwaPmZ2M31BiEYB7scQsasr0ztZdEpVIZGSL2SstxM3Jc7OI4orJTBuVOtRrt
-        PnB0VL/o4sxAr+yoZ/EsO949UU/jAQbfyuwjnlGWyRMPsvD3Ed8pKT9SL8MLLE4+4o679fLEiwheyvcR
-        fyspP1BvwwJET8XicvJEovyFW8X/ub9vXJfBQsTOlbosEjcOx0rFRHwA3N1s93Zu+7QAAAAASUVORK5C
-        YII=
 </value>
   </data>
   <data name="BunifuFlatButton2.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -141,6 +132,15 @@
         J3wE+wy6czybzRL0IusKC8Eem+HZbIZwE2OjBxp2+03nedaVk/CmdP6/C7aCSfWqBWfBpHpbEL3U9rYg
         eqntVQumgkn1qgWeFC84gv6+JxfgGXd2cIc1rDI28AB9NlwZwAHeEHv3rRfsoQ8tpQnhCwpGeR30S9qZ
         AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnThuNho.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAKlJREFUSEvt
+        kssKwkAQBMef87viA6JGwaPmZ2M31BiEYB7scQsasr0ztZdEpVIZGSL2SstxM3Jc7OI4orJTBuVOtRrt
+        PnB0VL/o4sxAr+yoZ/EsO949UU/jAQbfyuwjnlGWyRMPsvD3Ed8pKT9SL8MLLE4+4o679fLEiwheyvcR
+        fyspP1BvwwJET8XicvJEovyFW8X/ub9vXJfBQsTOlbosEjcOx0rFRHwA3N1s93Zu+7QAAAAASUVORK5C
+        YII=
 </value>
   </data>
 </root>

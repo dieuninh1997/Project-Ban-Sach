@@ -23,6 +23,7 @@ Partial Class FormMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMain))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
@@ -58,6 +59,7 @@ Partial Class FormMain
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.BunifuTransition1 = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.FormTaiLieu1 = New FormQuanLyBanSach.FormTaiLieu()
         Me.FormHome1 = New FormQuanLyBanSach.FormHome()
         Me.BunifuGradientPanel1.SuspendLayout()
@@ -90,6 +92,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuGradientPanel5)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuGradientPanel4)
         Me.BunifuGradientPanel1.Controls.Add(Me.BunifuGradientPanel3)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White
         Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White
@@ -107,6 +110,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel11.Controls.Add(Me.BunifuFlatButton9)
         Me.BunifuGradientPanel11.Controls.Add(Me.BunifuFlatButton8)
         Me.BunifuGradientPanel11.Controls.Add(Me.BunifuFlatButton7)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel11, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel11.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel11.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.BunifuGradientPanel11.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
@@ -126,6 +130,7 @@ Partial Class FormMain
         Me.BunifuFlatButton9.BorderRadius = 0
         Me.BunifuFlatButton9.ButtonText = "     Thông báo"
         Me.BunifuFlatButton9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton9, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton9.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton9.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BunifuFlatButton9.Iconcolor = System.Drawing.Color.Transparent
@@ -161,6 +166,7 @@ Partial Class FormMain
         Me.BunifuFlatButton8.BorderRadius = 0
         Me.BunifuFlatButton8.ButtonText = "     Phân tích - Thống kê"
         Me.BunifuFlatButton8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton8, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton8.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton8.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuFlatButton8.Iconcolor = System.Drawing.Color.Transparent
@@ -196,6 +202,7 @@ Partial Class FormMain
         Me.BunifuFlatButton7.BorderRadius = 0
         Me.BunifuFlatButton7.ButtonText = "     Phân quyền"
         Me.BunifuFlatButton7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton7, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton7.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton7.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuFlatButton7.Iconcolor = System.Drawing.Color.Transparent
@@ -230,6 +237,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel8.Controls.Add(Me.Label2)
         Me.BunifuGradientPanel8.Controls.Add(Me.BunifuCustomLabel5)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel8, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.White
         Me.BunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.White
@@ -244,6 +252,7 @@ Partial Class FormMain
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.BunifuTransition1.SetDecoration(Me.Label2, BunifuAnimatorNS.DecorationType.None)
         Me.Label2.Location = New System.Drawing.Point(12, 18)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(220, 2)
@@ -253,6 +262,7 @@ Partial Class FormMain
         'BunifuCustomLabel5
         '
         Me.BunifuCustomLabel5.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel5.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.Black
@@ -272,6 +282,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel6.Controls.Add(Me.BunifuFlatButton5)
         Me.BunifuGradientPanel6.Controls.Add(Me.BunifuFlatButton3)
         Me.BunifuGradientPanel6.Controls.Add(Me.BunifuFlatButton6)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel6, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.BunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
@@ -291,6 +302,7 @@ Partial Class FormMain
         Me.btnDsTaiLieu.BorderRadius = 0
         Me.btnDsTaiLieu.ButtonText = "     Danh sách tài liệu"
         Me.btnDsTaiLieu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.btnDsTaiLieu, BunifuAnimatorNS.DecorationType.None)
         Me.btnDsTaiLieu.DisabledColor = System.Drawing.Color.Gray
         Me.btnDsTaiLieu.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnDsTaiLieu.Iconcolor = System.Drawing.Color.Transparent
@@ -326,6 +338,7 @@ Partial Class FormMain
         Me.BunifuFlatButton5.BorderRadius = 0
         Me.BunifuFlatButton5.ButtonText = "     Danh sách nhân viên"
         Me.BunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton5.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent
@@ -361,6 +374,7 @@ Partial Class FormMain
         Me.BunifuFlatButton3.BorderRadius = 0
         Me.BunifuFlatButton3.ButtonText = "     Danh sách khách hàng"
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton3.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
@@ -396,6 +410,7 @@ Partial Class FormMain
         Me.BunifuFlatButton6.BorderRadius = 0
         Me.BunifuFlatButton6.ButtonText = "     Thông tin bán hàng"
         Me.BunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton6, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton6.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent
@@ -428,6 +443,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel7.AutoSize = True
         Me.BunifuGradientPanel7.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel7.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel7, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.White
         Me.BunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.White
@@ -444,6 +460,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel5.AutoSize = True
         Me.BunifuGradientPanel5.BackgroundImage = CType(resources.GetObject("BunifuGradientPanel5.BackgroundImage"), System.Drawing.Image)
         Me.BunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.BunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(252, Byte), Integer))
@@ -462,6 +479,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel4.Controls.Add(Me.BunifuCustomLabel4)
         Me.BunifuGradientPanel4.Controls.Add(Me.Label1)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel4, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.White
         Me.BunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.White
@@ -476,6 +494,7 @@ Partial Class FormMain
         'BunifuCustomLabel4
         '
         Me.BunifuCustomLabel4.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.Black
@@ -489,6 +508,7 @@ Partial Class FormMain
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.BunifuTransition1.SetDecoration(Me.Label1, BunifuAnimatorNS.DecorationType.None)
         Me.Label1.Location = New System.Drawing.Point(12, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(220, 2)
@@ -503,6 +523,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel3.Controls.Add(Me.BunifuCustomLabel1)
         Me.BunifuGradientPanel3.Controls.Add(Me.PictureBox2)
         Me.BunifuGradientPanel3.Controls.Add(Me.btnHome)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.BunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White
         Me.BunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.White
@@ -517,6 +538,7 @@ Partial Class FormMain
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(128, 44)
@@ -528,6 +550,7 @@ Partial Class FormMain
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.PictureBox2, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(38, 33)
         Me.PictureBox2.Name = "PictureBox2"
@@ -543,6 +566,7 @@ Partial Class FormMain
         Me.btnHome.BorderRadius = 0
         Me.btnHome.ButtonText = "     Trang bắt đầu"
         Me.btnHome.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.btnHome, BunifuAnimatorNS.DecorationType.None)
         Me.btnHome.DisabledColor = System.Drawing.Color.Gray
         Me.btnHome.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnHome.Iconcolor = System.Drawing.Color.Transparent
@@ -578,6 +602,7 @@ Partial Class FormMain
         Me.panel_main_header.Controls.Add(Me.BunifuCustomLabel3)
         Me.panel_main_header.Controls.Add(Me.BunifuGradientPanel9)
         Me.panel_main_header.Controls.Add(Me.BunifuFlatButton1)
+        Me.BunifuTransition1.SetDecoration(Me.panel_main_header, BunifuAnimatorNS.DecorationType.None)
         Me.panel_main_header.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel_main_header.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.panel_main_header.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
@@ -595,6 +620,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel10.Controls.Add(Me.PictureBox1)
         Me.BunifuGradientPanel10.Controls.Add(Me.BunifuFlatButton2)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel10, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel10.Dock = System.Windows.Forms.DockStyle.Left
         Me.BunifuGradientPanel10.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.BunifuGradientPanel10.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
@@ -608,6 +634,7 @@ Partial Class FormMain
         '
         'PictureBox1
         '
+        Me.BunifuTransition1.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(31, 12)
         Me.PictureBox1.Name = "PictureBox1"
@@ -624,6 +651,7 @@ Partial Class FormMain
         Me.BunifuFlatButton2.BorderRadius = 0
         Me.BunifuFlatButton2.ButtonText = ""
         Me.BunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton2.Iconimage = CType(resources.GetObject("BunifuFlatButton2.Iconimage"), System.Drawing.Image)
@@ -652,6 +680,7 @@ Partial Class FormMain
         'BunifuCustomLabel3
         '
         Me.BunifuCustomLabel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
+        Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -668,6 +697,7 @@ Partial Class FormMain
         Me.BunifuGradientPanel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuGradientPanel9.Controls.Add(Me.btnThuNho)
         Me.BunifuGradientPanel9.Controls.Add(Me.btnThoat)
+        Me.BunifuTransition1.SetDecoration(Me.BunifuGradientPanel9, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel9.Dock = System.Windows.Forms.DockStyle.Right
         Me.BunifuGradientPanel9.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.BunifuGradientPanel9.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
@@ -687,6 +717,7 @@ Partial Class FormMain
         Me.btnThuNho.BorderRadius = 0
         Me.btnThuNho.ButtonText = "_"
         Me.btnThuNho.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.btnThuNho, BunifuAnimatorNS.DecorationType.None)
         Me.btnThuNho.DisabledColor = System.Drawing.Color.Gray
         Me.btnThuNho.Iconcolor = System.Drawing.Color.Transparent
         Me.btnThuNho.Iconimage = CType(resources.GetObject("btnThuNho.Iconimage"), System.Drawing.Image)
@@ -721,6 +752,7 @@ Partial Class FormMain
         Me.btnThoat.BorderRadius = 0
         Me.btnThoat.ButtonText = "X"
         Me.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.btnThoat, BunifuAnimatorNS.DecorationType.None)
         Me.btnThoat.DisabledColor = System.Drawing.Color.Gray
         Me.btnThoat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(244, Byte), Integer))
         Me.btnThoat.Iconcolor = System.Drawing.Color.Transparent
@@ -756,6 +788,7 @@ Partial Class FormMain
         Me.BunifuFlatButton1.BorderRadius = 0
         Me.BunifuFlatButton1.ButtonText = "Need help ?"
         Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.BunifuFlatButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
         Me.BunifuFlatButton1.Iconimage = CType(resources.GetObject("BunifuFlatButton1.Iconimage"), System.Drawing.Image)
@@ -796,9 +829,32 @@ Partial Class FormMain
         Me.BunifuDragControl2.TargetControl = Me.panel_main_header
         Me.BunifuDragControl2.Vertical = True
         '
+        'BunifuTransition1
+        '
+        Me.BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
+        Me.BunifuTransition1.Cursor = Nothing
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(30)
+        Animation1.RotateCoeff = 0.5!
+        Animation1.RotateLimit = 0.2!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.BunifuTransition1.DefaultAnimation = Animation1
+        Me.BunifuTransition1.TimeStep = 1000.0!
+        '
         'FormTaiLieu1
         '
         Me.FormTaiLieu1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BunifuTransition1.SetDecoration(Me.FormTaiLieu1, BunifuAnimatorNS.DecorationType.None)
         Me.FormTaiLieu1.Location = New System.Drawing.Point(323, 77)
         Me.FormTaiLieu1.Name = "FormTaiLieu1"
         Me.FormTaiLieu1.Size = New System.Drawing.Size(844, 619)
@@ -807,6 +863,7 @@ Partial Class FormMain
         'FormHome1
         '
         Me.FormHome1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BunifuTransition1.SetDecoration(Me.FormHome1, BunifuAnimatorNS.DecorationType.None)
         Me.FormHome1.ForeColor = System.Drawing.Color.Black
         Me.FormHome1.Location = New System.Drawing.Point(323, 77)
         Me.FormHome1.Name = "FormHome1"
@@ -823,6 +880,7 @@ Partial Class FormMain
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.Controls.Add(Me.FormHome1)
         Me.Controls.Add(Me.panel_main_header)
+        Me.BunifuTransition1.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMain"
@@ -880,4 +938,5 @@ Partial Class FormMain
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents BunifuDragControl2 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents FormTaiLieu1 As FormTaiLieu
+    Friend WithEvents BunifuTransition1 As BunifuAnimatorNS.BunifuTransition
 End Class

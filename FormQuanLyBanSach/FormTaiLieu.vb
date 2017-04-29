@@ -1,35 +1,22 @@
 ﻿Public Class FormTaiLieu
     Dim SQL As New classConnectionDb
+    Dim index As Integer
+
+    Dim lan As Integer
+
 
     Private Sub FormTaiLieu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         tab1.ForeColor = Color.DodgerBlue
-        SQL.ExecQuery("SELECT * FROM SACH")
+        txtTimKiem.Visible = False
+        lan = 1
 
-        ' FormThemMoiTaiLieu1.Visible = False
-        'FormSearchTaiLieu1.Visible = False
-        Load_Grid()
-        lb_soSach.Text = "(Có " & SQL.RecordCount & " đầu tài liệu)"
+        hienThi("SELECT * FROM SACH")
 
-
-        ' Sua_Header()
 
     End Sub
-    Private Sub Sua_Header()
-        dgTaiLieu.DataSource = SQL.SQLDS.Tables(0)
-        With dgTaiLieu
-            .RowHeadersVisible = False
-            .Columns(0).Name = "Ảnh bìa"
-            .Columns(1).Name = "Mã sách"
-            .Columns(2).Name = "Tên sách"
-            .Columns(3).Name = "Số lượng tồn"
-            .Columns(4).Name = "Giá bán"
-            .Columns(5).Name = "Tác giả"
-            .Columns(6).Name = "Thể loại"
-            .Columns(7).Name = "Nhà xuất bản"
 
-        End With
-    End Sub
+
 
     Private Sub Load_Grid()
         If SQL.RecordCount > 0 Then
@@ -37,35 +24,26 @@
             dgTaiLieu.Rows(0).Selected = True
 
 
-
-
-
-
-
         End If
     End Sub
 
-    Private Sub btnThemMoi_Click(sender As Object, e As EventArgs) Handles btnThemMoi.Click
-        'FormThemMoiTaiLieu1.Visible = True
-        ' FormThemMoiTaiLieu1.BringToFront()
-        ' FormThemMoiTaiLieu1.Show()
-
-
-
-
+    Private Sub hienThi(Bang As String)
+        SQL.ExecQuery(Bang)
+        Load_Grid()
+        lb_soSach.Text = "(Có " & SQL.RecordCount & " đầu tài liệu)"
     End Sub
+
+
 
     Private Sub tab1_Click(sender As Object, e As EventArgs) Handles tab1.Click
         trans1.Width = tab1.Width
         trans1.Left = tab1.Left
         tab1.ForeColor = Color.DodgerBlue
         tab2.ForeColor = Color.Black
-
+        tab5.ForeColor = Color.Black
         tab3.ForeColor = Color.Black
         tab4.ForeColor = Color.Black
-
-
-
+        hienThi("SELECT * FROM SACH")
 
 
 
@@ -78,11 +56,10 @@
         trans1.Left = tab2.Left
         tab2.ForeColor = Color.DodgerBlue
         tab1.ForeColor = Color.Black
-
+        tab5.ForeColor = Color.Black
         tab3.ForeColor = Color.Black
         tab4.ForeColor = Color.Black
-
-
+        hienThi("SELECT * FROM TACGIA")
     End Sub
 
 
@@ -92,10 +69,10 @@
         trans1.Left = tab3.Left
         tab3.ForeColor = Color.DodgerBlue
         tab2.ForeColor = Color.Black
-
+        tab5.ForeColor = Color.Black
         tab1.ForeColor = Color.Black
         tab4.ForeColor = Color.Black
-
+        hienThi("SELECT * FROM THELOAI")
 
 
     End Sub
@@ -105,10 +82,68 @@
         trans1.Left = tab4.Left
         tab4.ForeColor = Color.DodgerBlue
         tab2.ForeColor = Color.Black
-
+        tab5.ForeColor = Color.Black
         tab3.ForeColor = Color.Black
         tab1.ForeColor = Color.Black
+        hienThi("SELECT nxb FROM SACH")
+
+    End Sub
+
+    Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles btnTimKiem.Click
+
+        tran1.ShowSync(txtTimKiem)
+
+        If lan = 1 Then
+            txtTimKiem.Visible = True
+
+        Else
+            txtTimKiem.Visible = False
+
+        End If
+        lan = lan + 1
+        If lan > 2 Then
+            lan = 1
+        End If
 
 
+
+
+
+    End Sub
+
+    Private Sub tab5_Click(sender As Object, e As EventArgs) Handles tab5.Click
+        trans1.Width = tab5.Width
+        trans1.Left = tab5.Left
+        tab5.ForeColor = Color.DodgerBlue
+        tab2.ForeColor = Color.Black
+        tab4.ForeColor = Color.Black
+        tab3.ForeColor = Color.Black
+        tab1.ForeColor = Color.Black
+        hienThi("SELECT * FROM PHIEUNHAP")
+    End Sub
+
+    Private Sub dgTaiLieu_CellMouseUp(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgTaiLieu.CellMouseUp
+        If e.Button = MouseButtons.Right Then
+            dgTaiLieu.Rows(e.RowIndex).Selected = True
+            index = e.RowIndex
+
+
+
+            dgTaiLieu.CurrentCell = dgTaiLieu.Rows(e.RowIndex).Cells(1)
+            ContextMenuStrip1.Show(dgTaiLieu, e.Location)
+            ContextMenuStrip1.Show(Cursor.Position)
+
+        End If
+    End Sub
+
+    Private Sub ContextMenuStrip1_Click(sender As Object, e As EventArgs) Handles ContextMenuStrip1.Click
+        ' If Not dgTaiLieu.Rows(index).IsNewRow Then
+        'dgTaiLieu.Rows.RemoveAt(index)
+
+
+
+
+
+        ' End If
     End Sub
 End Class
