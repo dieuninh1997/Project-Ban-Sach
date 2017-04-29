@@ -76,6 +76,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classConnectionDb.vb" />
+    <Compile Include="FormThemMoiTaiLieu.Designer.vb">
+      <DependentUpon>FormThemMoiTaiLieu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemMoiTaiLieu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="FormHome.Designer.vb">
       <DependentUpon>FormHome.vb</DependentUpon>
     </Compile>
@@ -88,6 +95,12 @@
     <Compile Include="FormMain.Designer.vb">
       <DependentUpon>FormMain.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchTaiLieu.Designer.vb">
+      <DependentUpon>FormSearchTaiLieu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchTaiLieu.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FormTaiLieu.Designer.vb">
       <DependentUpon>FormTaiLieu.vb</DependentUpon>
@@ -110,6 +123,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="QuanLyBanSachDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanSachDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.Designer.vb">
       <DependentUpon>UserControl1.vb</DependentUpon>
     </Compile>
@@ -118,11 +136,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormThemMoiTaiLieu.resx">
+      <DependentUpon>FormThemMoiTaiLieu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchTaiLieu.resx">
+      <DependentUpon>FormSearchTaiLieu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTaiLieu.resx">
       <DependentUpon>FormTaiLieu.vb</DependentUpon>
@@ -145,6 +169,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="QuanLyBanSachDataSet.xsc">
+      <DependentUpon>QuanLyBanSachDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyBanSachDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyBanSachDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyBanSachDataSet.xss">
+      <DependentUpon>QuanLyBanSachDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
